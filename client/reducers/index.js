@@ -1,7 +1,11 @@
 import {combineReducers} from 'redux'
 
-import words from './words'
+import currentPage from './current-page'
+import cart from './cart'
+import items from './items'
 
 export default combineReducers({
-  words
+  currentPage,
+  cart,
+  items
 })
