@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.2",
+    "knex": "^0.15.0",
     "superagent": "^3.8.3"
   }
 }
