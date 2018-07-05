@@ -5,7 +5,8 @@ const knex = require('knex')(config)
 module.exports = {
   getItem,
   editItem,
-  deleteItem
+  deleteItem,
+  postItem
 }
 
 function getItem (testDb) {
@@ -13,6 +14,10 @@ function getItem (testDb) {
   return db('Item').select()
 }
 
+function postItem (item, testDb) {
+  const db = testDb || knex
+  return db('item').insert(item)
+}
 function editItem (item, testDb) {
   const db = testDb || knex
   return db('item')
