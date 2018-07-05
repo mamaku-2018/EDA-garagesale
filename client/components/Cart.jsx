@@ -2,11 +2,19 @@ import React from 'react'
 
 const Cart = () => {
   return (
+
     <div className='cart'>
-      Cart here
+      <ul>
+        <li>{this.cart}</li>
+      </ul>
     </div>
 
   )
 }
 
-export default Cart
+function mapStateToProps (state) {
+  return {
+    cart: state.cart
+  }
+}
+export default mapStateToProps(Cart)
