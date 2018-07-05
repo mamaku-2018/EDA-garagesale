@@ -4,9 +4,8 @@ const knex = require('knex')(config)
 
 module.exports = {
   getItem,
-  editItem,
   deleteItem,
-  postItem
+  addItem
 }
 
 function getItem (testDb) {
@@ -14,14 +13,9 @@ function getItem (testDb) {
   return db('Item').select()
 }
 
-function postItem (item, testDb) {
+function addItem (item, testDb) {
   const db = testDb || knex
   return db('item').insert(item)
-}
-function editItem (item, testDb) {
-  const db = testDb || knex
-  return db('item')
-    .where('id', item.id).update(item)
 }
 
 function deleteItem (id, testDb) {

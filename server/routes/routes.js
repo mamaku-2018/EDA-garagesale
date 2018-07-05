@@ -16,21 +16,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const item= req.body
-  db.addItem(item)
-    .then(() => {
-      res.status(200).end()
-    })
-    .catch(err => {
-      // eslint-disable-next-line no-console
-      console.error(err)
-      res.status(500).send('Unable to read from database')
-    })
-})
-
-router.put('/', (req, res) => {
   const item = req.body
-  db.editItem(item)
+  db.addItem(item)
     .then(() => {
       res.status(200).end()
     })
