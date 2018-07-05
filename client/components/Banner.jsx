@@ -1,12 +1,7 @@
-import React from 'react'
+// import React from 'react'
 
-const Banner = () => {
-  return (
-    <div className='banner'>
+// const
 
-    </div>
+// </div>
 
-  )
-}
-
-export default Banner
+// export default Banner
