@@ -2,5 +2,6 @@
 
 // const
 
+// </div>
 
 // export default Banner
