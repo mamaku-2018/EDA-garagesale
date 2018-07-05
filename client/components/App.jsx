@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Words from './Words'
-import AddWord from './AddWord'
+import Main from './Main'
+import Banner from './Banner'
+import Nav from './Nav'
 
 const App = () => (
   <div className='app-container'>
-    <Words />
-    <AddWord />
+    <Banner />
+    <Nav />
+    <Main />
   </div>
 )
 
