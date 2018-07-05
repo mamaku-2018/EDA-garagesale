@@ -1,15 +1,22 @@
+html, body {
+
+width: 100%;
+height: 100%;
+}
+
 body {
+
+  min-height: 100%;
   background-color: crimson;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: #000;
+* {
+  box-sizing: border-box;
+  border: 0.2px solid blue;
 }
 
-.navigation {
-
-
-}
 
 .main{
 
@@ -22,8 +29,13 @@ h1 {
 }
 
 .banner{
+    text-align: center;
+    width: 100%;
+    background: crimson;
+    display: inline-block;
+    margin: auto;
+  }
 
-}
 
 .app-container {
 
@@ -31,9 +43,26 @@ h1 {
 }
 
 
+.nav-left {
+  width: 100%;
+  height: 15rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 100;
+  background-color: white; 
+}
 
+.nav-left {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  padding: 1.5rem 3rem;
+}
 
-
+.nav-left.img {
+  width: 15rem;
+}
 
 .dot {
   width: 2rem;
