@@ -3,23 +3,23 @@ const config = require(path.join(__dirname, '../../knexfile')).development
 const knex = require('knex')(config)
 
 module.exports = {
-  getItem,
+  getItems,
   deleteItem,
   addItem
 }
 
-function getItem (testDb) {
+function getItems (testDb) {
   const db = testDb || knex
-  return db('Item').select()
+  return db('Items').select()
 }
 
 function addItem (item, testDb) {
   const db = testDb || knex
-  return db('item').insert(item)
+  return db('Items').insert(item)
 }
 
 function deleteItem (id, testDb) {
   const db = testDb || knex
-  return db('item')
+  return db('Items')
     .where('id', id).del()
 }

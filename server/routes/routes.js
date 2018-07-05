@@ -5,8 +5,8 @@ const db = require('../db/db')
 
 router.get('/', (req, res) => {
   db.getItems()
-    .then(item => {
-      res.json(item)
+    .then(items => {
+      res.json(items)
     })
     .catch(err => {
       // eslint-disable-next-line no-console

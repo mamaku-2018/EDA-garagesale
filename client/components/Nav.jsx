@@ -1,12 +1,12 @@
-import React from 'react'
+// import React from 'react'
 
-const Nav = () => {
-  return (
-    <div className='navigation'>
-      <img src=
+// const Nav = () => {
+//   return (
+//     <div className='navigation'>
+//       <img src= />
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Nav
+// export default Nav

@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 
-const
+// const
 
 
-export default Banner
+// export default Banner
