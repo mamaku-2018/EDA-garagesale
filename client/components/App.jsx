@@ -1,13 +1,20 @@
 import React from 'react'
+import Nav from './Nav'
+import Banner from './Banner'
+import Main from './Main'
+import Cart from './Cart'
 
-import Words from './Words'
-import AddWord from './AddWord'
+class App extends React.Component {
+  render () {
+    return (
+      <div className='app-container'>
+        <Nav/>
+        <Banner/>
+        <Main/>
+        <Cart/>
 
-const App = () => (
-  <div className='app-container'>
-    <Words />
-    <AddWord />
-  </div>
-)
-
+      </div>
+    )
+  }
+}
 export default App
