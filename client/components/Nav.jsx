@@ -2,10 +2,12 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className='navigation'>
-      <img src=
+
+    <div className='nav-left'>
+      <img href='garage-sale.png'/>
 
     </div>
+
   )
 }
 
