@@ -1,7 +1,12 @@
-// import React from 'react'
+import React from 'react'
 
-// const
+const Banner = () => {
+  return (
+    <div className='banner'>
+      <img src='/images/garage.jpg' alt='garage'/>
+    </div>
 
-// </div>
+  )
+}
 
-// export default Banner
+export default Banner
