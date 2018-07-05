@@ -1,60 +1,52 @@
-html, body {
-
-width: 100%;
-height: 100%;
-}
-
-body {
-
-  min-height: 100%;
-  background-color: crimson;
-  margin: 0;
-  padding: 0;
-}
-
 * {
   box-sizing: border-box;
   border: 0.2px solid blue;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-.main{
+body {
+  background-color: crimson;
+  font-family: 'PT Sans', sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Spicy Rice', cursive;
+}
+
+/* NAV */
+
+.navigation {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+}
+
+#logo {
+  position: absolute;
+  left: 1rem;
+}
+
+#cartlogo {
+  position: absolute;
+  right: 1rem;
 
 }
 
-.cart{
+/* BANNER */
 
-
-}
-/* 
-.banner{
-    text-align: center;
-    width: 100%;
-    background: crimson;
-    display: inline-block;
-    margin: auto;
-  } */
-
-
-.app-container {
-
-  
+.banner {
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
-.nav-left.img {
-  width: 15rem;
-}
+/* MAIN */
 
-.dot {
-  width: 2rem;
-  height: 2rem;
-  border: 1px #ccc solid;
-  border-radius: 50%;
-}
-
-button {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-}
+/* CART */
