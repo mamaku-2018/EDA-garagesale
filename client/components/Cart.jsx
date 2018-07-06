@@ -5,7 +5,7 @@ const Cart = () => {
 
     <div className='cart'>
       <ul>
-        <li>{this.cart}</li>
+        <li>{this.props.cart}</li>
       </ul>
     </div>
 
