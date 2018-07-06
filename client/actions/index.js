@@ -1,4 +1,4 @@
-import { request } from 'http'
+import {request} from 'http'
 
 export const REQUEST_ITEMS = 'REQUEST_ITEMS'
 export const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
@@ -10,9 +10,10 @@ export const requestItems = () => {
   }
 }
 
-export const receiveItems = () => {
+export const receiveItems = (items) => {
   return {
-    type: 'RECEIVE_ITEMS'
+    type: 'RECEIVE_ITEMS',
+    items
   }
 }
 

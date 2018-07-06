@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {getAllItems} from '../apiClient'
 
-import {receiveItems, fetchItems} from '../actions'
 import Item from './Item'
 class Main extends React.Component {
   constructor (props) {
@@ -10,8 +10,9 @@ class Main extends React.Component {
   }
 
   componentDidMount () {
-    this.props.dispatch(receiveItems())
+    this.props.dispatch(getAllItems())
   }
+
   render () {
     return (
       <div className='main'>
