@@ -5,12 +5,12 @@ module.exports = {
       name: 'Mike Mee Goreng',
       description: 'A fun snack'
     }, {
-      id: 1,
+      id: 2,
       name: 'Don Teacher',
       description: 'Our sensei'
 
     }, {
-      id: 1,
+      id: 3,
       name: 'Deep Dive Dougs',
       description: 'Wedding speech writer extrodinaire'
     }

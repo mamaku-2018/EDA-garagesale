@@ -5,7 +5,7 @@ const intitialState = itemData.items
 const items = (state = intitialState, action) => {
   switch (action.type) {
     case RECEIVE_ITEMS:
-      return action.items
+      return state
 
     default:
       return state
