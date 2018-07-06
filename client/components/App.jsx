@@ -4,7 +4,6 @@ import React from 'react'
 import Main from './Main'
 // import Cart from './Cart'
 
-
 class App extends React.Component {
   render () {
     return (
@@ -17,4 +16,5 @@ class App extends React.Component {
     )
   }
 }
+
 export default App

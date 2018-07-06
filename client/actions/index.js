@@ -10,9 +10,10 @@ export const requestItems = () => {
   }
 }
 
-export const receiveItems = () => {
+export const receiveItems = (items) => {
   return {
-    type: 'RECEIVE_ITEMS'
+    type: 'RECEIVE_ITEMS',
+    items
   }
 }
 
