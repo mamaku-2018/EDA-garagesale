@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {getAllItems} from '../apiClient'
-import {receiveItems} from '../actions'
 import Item from './Item'
 
 class Main extends React.Component {
@@ -21,12 +20,6 @@ class Main extends React.Component {
         <h3>Everything must go!</h3>
         <table>
           <thead>
-            <tr>
-              <th></th>
-              <th>Item</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
           </thead>
           <tbody>
             {this.props.items.map(item => {

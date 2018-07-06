@@ -74,12 +74,14 @@ h2, h3 {
 
 /* MAIN */
 
-.main ul {
+.main li {
+  font-size: 40px;
   list-style: none;
+  
 }
 
-.main table {
-
+.main img {
+  width: 200px;
 }
 
 /* CART */
