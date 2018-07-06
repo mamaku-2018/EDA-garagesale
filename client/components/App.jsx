@@ -4,6 +4,7 @@ import Banner from './Banner'
 import Main from './Main'
 import Cart from './Cart'
 
+
 class App extends React.Component {
   render () {
     return (
@@ -12,7 +13,6 @@ class App extends React.Component {
         <Banner/>
         <Main/>
         <Cart/>
-
       </div>
     )
   }
