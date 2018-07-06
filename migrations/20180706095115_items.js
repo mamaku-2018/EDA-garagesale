@@ -4,7 +4,7 @@ exports.up = (knex, Promise) => {
     table.string('imageurl')
     table.string('name')
     table.string('description')
-    table.integer('price')
+    table.decimal('price')
   })
 }
 
