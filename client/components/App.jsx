@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Banner from './Banner'
-// import Main from './Main'
+import Main from './Main'
 // import Cart from './Cart'
 
 class App extends React.Component {
@@ -10,7 +10,7 @@ class App extends React.Component {
       <div className='app-container'>
         <Nav/>
         <Banner/>
-        {/* <Main/> */}
+        <Main/>
         {/* <Cart/> */}
       </div>
     )
