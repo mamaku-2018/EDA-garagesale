@@ -1,4 +1,4 @@
-import { request } from 'http'
+import {request} from 'http'
 
 export const REQUEST_ITEMS = 'REQUEST_ITEMS'
 export const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
