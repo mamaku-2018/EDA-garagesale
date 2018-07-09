@@ -1,5 +1,9 @@
 // server/db/users.js
-const connection = require('./connection')
+const path = require('path')
+const config = require(path.join(__dirname, '../../knexfile')).development
+const connection = require('knex')(config)
+
+// const connection = require('./connection')
 
 module.exports = {
   createUser,
