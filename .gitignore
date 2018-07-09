@@ -2,3 +2,4 @@ node_modules
 bundle*
 yarn.lock
 dev.sqlite3
+.env
