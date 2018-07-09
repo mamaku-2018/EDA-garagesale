@@ -2,6 +2,7 @@
 const path = require('path')
 const config = require(path.join(__dirname, '../../knexfile')).development
 const connection = require('knex')(config)
+const hash = require('../auth/hash')
 
 // const connection = require('./connection')
 
@@ -12,8 +13,9 @@ module.exports = {
 
 function createUser (username, password, conn) {
   const db = conn || connection
+  const generateHash = hash.generate(password)
   return db('users')
-    .insert({username, hash: password})
+    .insert({username, hash: generateHash})
 }
 
 function userExists (username, conn) {
