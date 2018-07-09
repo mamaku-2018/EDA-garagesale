@@ -20,7 +20,12 @@ function register (req, res, next) {
     })
 }
 
-router.post('/', register, token.issue)
+router.post('/register', register, token.issue)
+
+router.get('/username', token.decode, (req, res) => {
+  res.json({
+    username: req.user.username
+  })
+})
 
 module.exports = router
- 

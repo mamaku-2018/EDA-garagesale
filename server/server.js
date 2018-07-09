@@ -11,6 +11,6 @@ server.use(passport.initialize())
 server.use(express.static(path.join(__dirname, './public')))
 
 server.use('/api/v1/items', routes)
-server.use('/api/v1/auth/register', auth)
+server.use('/api/v1/auth', auth)
 
 module.exports = server
