@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const token = require('../auth/token')
 
 const users = require('../db/users')
 
@@ -11,7 +12,7 @@ function register (req, res, next) {
         res.status(400).json({message: 'User exists'})
       } else {
         users.createUser(username, password)
-          .then(() => res.status(201).end())
+          .then(() => next())
       }
     })
     .catch((err) => {
@@ -19,6 +20,7 @@ function register (req, res, next) {
     })
 }
 
-router.post('/', register)
+router.post('/', register, token.issue)
 
 module.exports = router
+ 
